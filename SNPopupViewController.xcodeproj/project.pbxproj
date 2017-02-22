@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B368F15A1E5D5AF3006340F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B368F1591E5D5AF3006340F0 /* main.m */; };
+		B368F15D1E5D5AF3006340F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B368F15C1E5D5AF3006340F0 /* AppDelegate.m */; };
+		B368F1601E5D5AF3006340F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B368F15F1E5D5AF3006340F0 /* ViewController.m */; };
+		B368F1631E5D5AF3006340F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B368F1611E5D5AF3006340F0 /* Main.storyboard */; };
+		B368F1651E5D5AF3006340F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B368F1641E5D5AF3006340F0 /* Assets.xcassets */; };
+		B368F1681E5D5AF3006340F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B368F1661E5D5AF3006340F0 /* LaunchScreen.storyboard */; };
+		B368F1731E5D5AF3006340F0 /* SNPopupViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B368F1721E5D5AF3006340F0 /* SNPopupViewControllerTests.m */; };
+		B368F17E1E5D5AF3006340F0 /* SNPopupViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B368F17D1E5D5AF3006340F0 /* SNPopupViewControllerUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B368F16F1E5D5AF3006340F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B368F14D1E5D5AF2006340F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B368F1541E5D5AF2006340F0;
+			remoteInfo = SNPopupViewController;
+		};
+		B368F17A1E5D5AF3006340F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B368F14D1E5D5AF2006340F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B368F1541E5D5AF2006340F0;
+			remoteInfo = SNPopupViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B368F1551E5D5AF2006340F0 /* SNPopupViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNPopupViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B368F1591E5D5AF3006340F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B368F15B1E5D5AF3006340F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B368F15C1E5D5AF3006340F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B368F15E1E5D5AF3006340F0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B368F15F1E5D5AF3006340F0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B368F1621E5D5AF3006340F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B368F1641E5D5AF3006340F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B368F1671E5D5AF3006340F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B368F1691E5D5AF3006340F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B368F16E1E5D5AF3006340F0 /* SNPopupViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SNPopupViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B368F1721E5D5AF3006340F0 /* SNPopupViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNPopupViewControllerTests.m; sourceTree = "<group>"; };
+		B368F1741E5D5AF3006340F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B368F1791E5D5AF3006340F0 /* SNPopupViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SNPopupViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B368F17D1E5D5AF3006340F0 /* SNPopupViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNPopupViewControllerUITests.m; sourceTree = "<group>"; };
+		B368F17F1E5D5AF3006340F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B368F1521E5D5AF2006340F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B368F16B1E5D5AF3006340F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B368F1761E5D5AF3006340F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B368F14C1E5D5AF2006340F0 = {
+			isa = PBXGroup;
+			children = (
+				B368F1571E5D5AF2006340F0 /* SNPopupViewController */,
+				B368F1711E5D5AF3006340F0 /* SNPopupViewControllerTests */,
+				B368F17C1E5D5AF3006340F0 /* SNPopupViewControllerUITests */,
+				B368F1561E5D5AF2006340F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B368F1561E5D5AF2006340F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B368F1551E5D5AF2006340F0 /* SNPopupViewController.app */,
+				B368F16E1E5D5AF3006340F0 /* SNPopupViewControllerTests.xctest */,
+				B368F1791E5D5AF3006340F0 /* SNPopupViewControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B368F1571E5D5AF2006340F0 /* SNPopupViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B368F15B1E5D5AF3006340F0 /* AppDelegate.h */,
+				B368F15C1E5D5AF3006340F0 /* AppDelegate.m */,
+				B368F15E1E5D5AF3006340F0 /* ViewController.h */,
+				B368F15F1E5D5AF3006340F0 /* ViewController.m */,
+				B368F1611E5D5AF3006340F0 /* Main.storyboard */,
+				B368F1641E5D5AF3006340F0 /* Assets.xcassets */,
+				B368F1661E5D5AF3006340F0 /* LaunchScreen.storyboard */,
+				B368F1691E5D5AF3006340F0 /* Info.plist */,
+				B368F1581E5D5AF3006340F0 /* Supporting Files */,
+			);
+			path = SNPopupViewController;
+			sourceTree = "<group>";
+		};
+		B368F1581E5D5AF3006340F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B368F1591E5D5AF3006340F0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B368F1711E5D5AF3006340F0 /* SNPopupViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B368F1721E5D5AF3006340F0 /* SNPopupViewControllerTests.m */,
+				B368F1741E5D5AF3006340F0 /* Info.plist */,
+			);
+			path = SNPopupViewControllerTests;
+			sourceTree = "<group>";
+		};
+		B368F17C1E5D5AF3006340F0 /* SNPopupViewControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B368F17D1E5D5AF3006340F0 /* SNPopupViewControllerUITests.m */,
+				B368F17F1E5D5AF3006340F0 /* Info.plist */,
+			);
+			path = SNPopupViewControllerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B368F1541E5D5AF2006340F0 /* SNPopupViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B368F1821E5D5AF3006340F0 /* Build configuration list for PBXNativeTarget "SNPopupViewController" */;
+			buildPhases = (
+				B368F1511E5D5AF2006340F0 /* Sources */,
+				B368F1521E5D5AF2006340F0 /* Frameworks */,
+				B368F1531E5D5AF2006340F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SNPopupViewController;
+			productName = SNPopupViewController;
+			productReference = B368F1551E5D5AF2006340F0 /* SNPopupViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B368F16D1E5D5AF3006340F0 /* SNPopupViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B368F1851E5D5AF3006340F0 /* Build configuration list for PBXNativeTarget "SNPopupViewControllerTests" */;
+			buildPhases = (
+				B368F16A1E5D5AF3006340F0 /* Sources */,
+				B368F16B1E5D5AF3006340F0 /* Frameworks */,
+				B368F16C1E5D5AF3006340F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B368F1701E5D5AF3006340F0 /* PBXTargetDependency */,
+			);
+			name = SNPopupViewControllerTests;
+			productName = SNPopupViewControllerTests;
+			productReference = B368F16E1E5D5AF3006340F0 /* SNPopupViewControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B368F1781E5D5AF3006340F0 /* SNPopupViewControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B368F1881E5D5AF3006340F0 /* Build configuration list for PBXNativeTarget "SNPopupViewControllerUITests" */;
+			buildPhases = (
+				B368F1751E5D5AF3006340F0 /* Sources */,
+				B368F1761E5D5AF3006340F0 /* Frameworks */,
+				B368F1771E5D5AF3006340F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B368F17B1E5D5AF3006340F0 /* PBXTargetDependency */,
+			);
+			name = SNPopupViewControllerUITests;
+			productName = SNPopupViewControllerUITests;
+			productReference = B368F1791E5D5AF3006340F0 /* SNPopupViewControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B368F14D1E5D5AF2006340F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = snlo;
+				TargetAttributes = {
+					B368F1541E5D5AF2006340F0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					B368F16D1E5D5AF3006340F0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B368F1541E5D5AF2006340F0;
+					};
+					B368F1781E5D5AF3006340F0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B368F1541E5D5AF2006340F0;
+					};
+				};
+			};
+			buildConfigurationList = B368F1501E5D5AF2006340F0 /* Build configuration list for PBXProject "SNPopupViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B368F14C1E5D5AF2006340F0;
+			productRefGroup = B368F1561E5D5AF2006340F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B368F1541E5D5AF2006340F0 /* SNPopupViewController */,
+				B368F16D1E5D5AF3006340F0 /* SNPopupViewControllerTests */,
+				B368F1781E5D5AF3006340F0 /* SNPopupViewControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B368F1531E5D5AF2006340F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B368F1681E5D5AF3006340F0 /* LaunchScreen.storyboard in Resources */,
+				B368F1651E5D5AF3006340F0 /* Assets.xcassets in Resources */,
+				B368F1631E5D5AF3006340F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B368F16C1E5D5AF3006340F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B368F1771E5D5AF3006340F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B368F1511E5D5AF2006340F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B368F1601E5D5AF3006340F0 /* ViewController.m in Sources */,
+				B368F15D1E5D5AF3006340F0 /* AppDelegate.m in Sources */,
+				B368F15A1E5D5AF3006340F0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B368F16A1E5D5AF3006340F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B368F1731E5D5AF3006340F0 /* SNPopupViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B368F1751E5D5AF3006340F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B368F17E1E5D5AF3006340F0 /* SNPopupViewControllerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B368F1701E5D5AF3006340F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B368F1541E5D5AF2006340F0 /* SNPopupViewController */;
+			targetProxy = B368F16F1E5D5AF3006340F0 /* PBXContainerItemProxy */;
+		};
+		B368F17B1E5D5AF3006340F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B368F1541E5D5AF2006340F0 /* SNPopupViewController */;
+			targetProxy = B368F17A1E5D5AF3006340F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B368F1611E5D5AF3006340F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B368F1621E5D5AF3006340F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B368F1661E5D5AF3006340F0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B368F1671E5D5AF3006340F0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B368F1801E5D5AF3006340F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B368F1811E5D5AF3006340F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B368F1831E5D5AF3006340F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SNPopupViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = snloveydus.SNPopupViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B368F1841E5D5AF3006340F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SNPopupViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = snloveydus.SNPopupViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B368F1861E5D5AF3006340F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SNPopupViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = snloveydus.SNPopupViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SNPopupViewController.app/SNPopupViewController";
+			};
+			name = Debug;
+		};
+		B368F1871E5D5AF3006340F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SNPopupViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = snloveydus.SNPopupViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SNPopupViewController.app/SNPopupViewController";
+			};
+			name = Release;
+		};
+		B368F1891E5D5AF3006340F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SNPopupViewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = snloveydus.SNPopupViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SNPopupViewController;
+			};
+			name = Debug;
+		};
+		B368F18A1E5D5AF3006340F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SNPopupViewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = snloveydus.SNPopupViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SNPopupViewController;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B368F1501E5D5AF2006340F0 /* Build configuration list for PBXProject "SNPopupViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B368F1801E5D5AF3006340F0 /* Debug */,
+				B368F1811E5D5AF3006340F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B368F1821E5D5AF3006340F0 /* Build configuration list for PBXNativeTarget "SNPopupViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B368F1831E5D5AF3006340F0 /* Debug */,
+				B368F1841E5D5AF3006340F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B368F1851E5D5AF3006340F0 /* Build configuration list for PBXNativeTarget "SNPopupViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B368F1861E5D5AF3006340F0 /* Debug */,
+				B368F1871E5D5AF3006340F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B368F1881E5D5AF3006340F0 /* Build configuration list for PBXNativeTarget "SNPopupViewControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B368F1891E5D5AF3006340F0 /* Debug */,
+				B368F18A1E5D5AF3006340F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B368F14D1E5D5AF2006340F0 /* Project object */;
+}
