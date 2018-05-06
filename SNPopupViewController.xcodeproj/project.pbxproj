@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EB000BC209F068E003E8AF8 /* SNPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB000BB209F068E003E8AF8 /* SNPopupView.m */; };
+		5EB000BF209F077F003E8AF8 /* SNPopupTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB000BE209F077F003E8AF8 /* SNPopupTool.m */; };
+		5EB000C2209F0A64003E8AF8 /* UIViewController+SNPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB000C1209F0A64003E8AF8 /* UIViewController+SNPopupViewController.m */; };
 		B368F15A1E5D5AF3006340F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B368F1591E5D5AF3006340F0 /* main.m */; };
 		B368F15D1E5D5AF3006340F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B368F15C1E5D5AF3006340F0 /* AppDelegate.m */; };
 		B368F1601E5D5AF3006340F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B368F15F1E5D5AF3006340F0 /* ViewController.m */; };
@@ -35,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5EB000BA209F068E003E8AF8 /* SNPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNPopupView.h; sourceTree = "<group>"; };
+		5EB000BB209F068E003E8AF8 /* SNPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNPopupView.m; sourceTree = "<group>"; };
+		5EB000BD209F077F003E8AF8 /* SNPopupTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNPopupTool.h; sourceTree = "<group>"; };
+		5EB000BE209F077F003E8AF8 /* SNPopupTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNPopupTool.m; sourceTree = "<group>"; };
+		5EB000C0209F0A64003E8AF8 /* UIViewController+SNPopupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SNPopupViewController.h"; sourceTree = "<group>"; };
+		5EB000C1209F0A64003E8AF8 /* UIViewController+SNPopupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SNPopupViewController.m"; sourceTree = "<group>"; };
 		B368F1551E5D5AF2006340F0 /* SNPopupViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNPopupViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B368F1591E5D5AF3006340F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B368F15B1E5D5AF3006340F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +87,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5EB000B9209F068E003E8AF8 /* SNPopupViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5EB000BA209F068E003E8AF8 /* SNPopupView.h */,
+				5EB000BB209F068E003E8AF8 /* SNPopupView.m */,
+				5EB000BD209F077F003E8AF8 /* SNPopupTool.h */,
+				5EB000BE209F077F003E8AF8 /* SNPopupTool.m */,
+				5EB000C0209F0A64003E8AF8 /* UIViewController+SNPopupViewController.h */,
+				5EB000C1209F0A64003E8AF8 /* UIViewController+SNPopupViewController.m */,
+			);
+			path = SNPopupViewController;
+			sourceTree = "<group>";
+		};
 		B368F14C1E5D5AF2006340F0 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +127,7 @@
 				B368F15C1E5D5AF3006340F0 /* AppDelegate.m */,
 				B368F15E1E5D5AF3006340F0 /* ViewController.h */,
 				B368F15F1E5D5AF3006340F0 /* ViewController.m */,
+				5EB000B9209F068E003E8AF8 /* SNPopupViewController */,
 				B368F1611E5D5AF3006340F0 /* Main.storyboard */,
 				B368F1641E5D5AF3006340F0 /* Assets.xcassets */,
 				B368F1661E5D5AF3006340F0 /* LaunchScreen.storyboard */,
@@ -202,7 +225,7 @@
 		B368F14D1E5D5AF2006340F0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = snlo;
 				TargetAttributes = {
 					B368F1541E5D5AF2006340F0 = {
@@ -273,9 +296,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EB000BC209F068E003E8AF8 /* SNPopupView.m in Sources */,
+				5EB000C2209F0A64003E8AF8 /* UIViewController+SNPopupViewController.m in Sources */,
 				B368F1601E5D5AF3006340F0 /* ViewController.m in Sources */,
 				B368F15D1E5D5AF3006340F0 /* AppDelegate.m in Sources */,
 				B368F15A1E5D5AF3006340F0 /* main.m in Sources */,
+				5EB000BF209F077F003E8AF8 /* SNPopupTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,15 +365,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -387,15 +421,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -509,6 +551,7 @@
 				B368F1841E5D5AF3006340F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B368F1851E5D5AF3006340F0 /* Build configuration list for PBXNativeTarget "SNPopupViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +560,7 @@
 				B368F1871E5D5AF3006340F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B368F1881E5D5AF3006340F0 /* Build configuration list for PBXNativeTarget "SNPopupViewControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +569,7 @@
 				B368F18A1E5D5AF3006340F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
