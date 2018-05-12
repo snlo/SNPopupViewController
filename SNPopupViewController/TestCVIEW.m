@@ -10,12 +10,35 @@
 
 @implementation TestCVIEW
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (void)awakeFromNib {
+	[super awakeFromNib];
+	
+	
+	CABasicAnimation * sss = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+	sss.duration = 0.15;
+	sss.fromValue = @0.3;
+	sss.toValue = @1;
+	sss.timingFunction = [CAMediaTimingFunction functionWithName: kCAMediaTimingFunctionLinear];
+	sss.removedOnCompletion = NO;
+	sss.fillMode = kCAFillModeForwards;
+	
+	self.showAnimation = sss;
+	
+//	self.isBlankTouchInVisible = YES;
 }
-*/
+
+- (void)addSubviewShowAnimation {
+	CABasicAnimation * sss = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+	sss.duration = 0.15;
+	sss.fromValue = @2;
+	sss.toValue = @1;
+	sss.timingFunction = [CAMediaTimingFunction functionWithName: kCAMediaTimingFunctionLinear];
+	sss.removedOnCompletion = NO;
+	sss.fillMode = kCAFillModeForwards;
+	
+	[self.view1.layer addAnimation:sss forKey:nil];
+	[self.view2.layer addAnimation:sss forKey:nil];
+}
+
 
 @end

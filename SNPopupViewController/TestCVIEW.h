@@ -9,5 +9,7 @@
 #import "SNPopupView.h"
 
 @interface TestCVIEW : SNPopupView
+@property (weak, nonatomic) IBOutlet UIView *view1;
+@property (weak, nonatomic) IBOutlet UIView *view2;
 
 @end

@@ -9,8 +9,6 @@
 #import "ViewController.h"
 
 #import "TestCVIEW.h"
-//#import <SNUIKit.h>
-//#import <SNTool.h>
 
 @interface ViewController ()
 
