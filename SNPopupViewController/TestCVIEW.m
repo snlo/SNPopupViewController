@@ -24,7 +24,7 @@
 	
 	self.showAnimation = sss;
 	
-//	self.isBlankTouchInVisible = YES;
+	self.isBlankTouchInVisible = YES;
 }
 
 - (void)addSubviewShowAnimation {
@@ -38,6 +38,10 @@
 	
 	[self.view1.layer addAnimation:sss forKey:nil];
 	[self.view2.layer addAnimation:sss forKey:nil];
+}
+- (IBAction)handleButton:(id)sender {
+	
+	[self dismissFromSuperView:nil];
 }
 
 
