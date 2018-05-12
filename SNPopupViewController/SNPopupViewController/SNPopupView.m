@@ -51,7 +51,7 @@ typedef void(^ReceiveDismissBlock)(void);
         
     } completion:^(BOOL finished) {
         [self removeFromSuperview];
-        [SNPopupTool topViewController].snPopup_isAbleEdgeGesture = YES;
+        [SNTool topViewController].snPopup_isAbleEdgeGesture = YES;
         if (self.receiveDismissBlock) {
             self.receiveDismissBlock();
         } else {
@@ -63,7 +63,7 @@ typedef void(^ReceiveDismissBlock)(void);
 }
 
 - (void)showInSuperView:(void(^)(void))block {
-    self.frame = CGRectMake(0, 0, SNPOPUP_SCREEN_WIDTH, SNPOPUP_SCREEN_HEIGHT);
+    self.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
     
     //加载单击回退手势
     UITapGestureRecognizer * touchBlankGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(touchesBlank:)];
@@ -75,12 +75,12 @@ typedef void(^ReceiveDismissBlock)(void);
     [self.subviews.firstObject.layer addAnimation:[self zoomOutAnimation] forKey:nil];
     
     self.alpha = 0;
-    [[SNPopupTool getNextViewController].view endEditing:YES];
-    [[SNPopupTool getNextViewController].view addSubview:self];
+    [[SNTool topViewController].view endEditing:YES];
+    [[SNTool topViewController].view addSubview:self];
     [UIView animateWithDuration:0.15 animations:^{
         self.alpha = 1;
     } completion:^(BOOL finished) {
-        [SNPopupTool topViewController].snPopup_isAbleEdgeGesture = NO;
+        [SNTool topViewController].snPopup_isAbleEdgeGesture = NO;
         if (block) {
             block();
         }

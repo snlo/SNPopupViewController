@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		534336567ACCB860D8023802 /* libPods-SNPopupViewControllerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E97F7C17E45DB624CBECFD0 /* libPods-SNPopupViewControllerUITests.a */; };
 		5EB000BC209F068E003E8AF8 /* SNPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB000BB209F068E003E8AF8 /* SNPopupView.m */; };
 		5EB000BF209F077F003E8AF8 /* SNPopupTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB000BE209F077F003E8AF8 /* SNPopupTool.m */; };
 		5EB000C2209F0A64003E8AF8 /* UIViewController+SNPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB000C1209F0A64003E8AF8 /* UIViewController+SNPopupViewController.m */; };
+		5ED6AAD320A663CC00128667 /* TestCVIEW.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED6AAD220A663CC00128667 /* TestCVIEW.m */; };
+		5ED6AAD520A6651E00128667 /* TestCVIEW.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ED6AAD420A6651E00128667 /* TestCVIEW.xib */; };
+		8681A9BB84F38563396A9A32 /* libPods-SNPopupViewControllerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D94A6E039635FC15BE627CB /* libPods-SNPopupViewControllerTests.a */; };
+		AF5C409E520A1ACB875AE275 /* libPods-SNPopupViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6875B3BEBE7363CB345828EC /* libPods-SNPopupViewController.a */; };
 		B368F15A1E5D5AF3006340F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B368F1591E5D5AF3006340F0 /* main.m */; };
 		B368F15D1E5D5AF3006340F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B368F15C1E5D5AF3006340F0 /* AppDelegate.m */; };
 		B368F1601E5D5AF3006340F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B368F15F1E5D5AF3006340F0 /* ViewController.m */; };
@@ -38,12 +43,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E97F7C17E45DB624CBECFD0 /* libPods-SNPopupViewControllerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SNPopupViewControllerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D94A6E039635FC15BE627CB /* libPods-SNPopupViewControllerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SNPopupViewControllerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB000BA209F068E003E8AF8 /* SNPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNPopupView.h; sourceTree = "<group>"; };
 		5EB000BB209F068E003E8AF8 /* SNPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNPopupView.m; sourceTree = "<group>"; };
 		5EB000BD209F077F003E8AF8 /* SNPopupTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNPopupTool.h; sourceTree = "<group>"; };
 		5EB000BE209F077F003E8AF8 /* SNPopupTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNPopupTool.m; sourceTree = "<group>"; };
 		5EB000C0209F0A64003E8AF8 /* UIViewController+SNPopupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SNPopupViewController.h"; sourceTree = "<group>"; };
 		5EB000C1209F0A64003E8AF8 /* UIViewController+SNPopupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SNPopupViewController.m"; sourceTree = "<group>"; };
+		5ED6AAD120A663CC00128667 /* TestCVIEW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCVIEW.h; sourceTree = "<group>"; };
+		5ED6AAD220A663CC00128667 /* TestCVIEW.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCVIEW.m; sourceTree = "<group>"; };
+		5ED6AAD420A6651E00128667 /* TestCVIEW.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCVIEW.xib; sourceTree = "<group>"; };
+		6875B3BEBE7363CB345828EC /* libPods-SNPopupViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SNPopupViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B500300AAC4DC99B1BDAC85 /* Pods-SNPopupViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNPopupViewController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SNPopupViewController/Pods-SNPopupViewController.debug.xcconfig"; sourceTree = "<group>"; };
+		9664E31E728EDCA95D82FD45 /* Pods-SNPopupViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNPopupViewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-SNPopupViewController/Pods-SNPopupViewController.release.xcconfig"; sourceTree = "<group>"; };
 		B368F1551E5D5AF2006340F0 /* SNPopupViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNPopupViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B368F1591E5D5AF3006340F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B368F15B1E5D5AF3006340F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,6 +73,10 @@
 		B368F1791E5D5AF3006340F0 /* SNPopupViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SNPopupViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B368F17D1E5D5AF3006340F0 /* SNPopupViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNPopupViewControllerUITests.m; sourceTree = "<group>"; };
 		B368F17F1E5D5AF3006340F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B378FEE2A1ED0CD86E3F9E0F /* Pods-SNPopupViewControllerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNPopupViewControllerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SNPopupViewControllerUITests/Pods-SNPopupViewControllerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BEE1119391F9FFD904747779 /* Pods-SNPopupViewControllerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNPopupViewControllerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SNPopupViewControllerUITests/Pods-SNPopupViewControllerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EF2636B4F0DD4AA83353F281 /* Pods-SNPopupViewControllerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNPopupViewControllerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SNPopupViewControllerTests/Pods-SNPopupViewControllerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F492AE3094A98F9709C99330 /* Pods-SNPopupViewControllerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNPopupViewControllerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SNPopupViewControllerTests/Pods-SNPopupViewControllerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF5C409E520A1ACB875AE275 /* libPods-SNPopupViewController.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8681A9BB84F38563396A9A32 /* libPods-SNPopupViewControllerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,12 +100,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				534336567ACCB860D8023802 /* libPods-SNPopupViewControllerUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A2B1310F03C66D69807D538 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6875B3BEBE7363CB345828EC /* libPods-SNPopupViewController.a */,
+				4D94A6E039635FC15BE627CB /* libPods-SNPopupViewControllerTests.a */,
+				3E97F7C17E45DB624CBECFD0 /* libPods-SNPopupViewControllerUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		296718EBF5E34CA5B5195463 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B500300AAC4DC99B1BDAC85 /* Pods-SNPopupViewController.debug.xcconfig */,
+				9664E31E728EDCA95D82FD45 /* Pods-SNPopupViewController.release.xcconfig */,
+				EF2636B4F0DD4AA83353F281 /* Pods-SNPopupViewControllerTests.debug.xcconfig */,
+				F492AE3094A98F9709C99330 /* Pods-SNPopupViewControllerTests.release.xcconfig */,
+				B378FEE2A1ED0CD86E3F9E0F /* Pods-SNPopupViewControllerUITests.debug.xcconfig */,
+				BEE1119391F9FFD904747779 /* Pods-SNPopupViewControllerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5EB000B9209F068E003E8AF8 /* SNPopupViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +150,8 @@
 				B368F1711E5D5AF3006340F0 /* SNPopupViewControllerTests */,
 				B368F17C1E5D5AF3006340F0 /* SNPopupViewControllerUITests */,
 				B368F1561E5D5AF2006340F0 /* Products */,
+				296718EBF5E34CA5B5195463 /* Pods */,
+				0A2B1310F03C66D69807D538 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +172,9 @@
 				B368F15C1E5D5AF3006340F0 /* AppDelegate.m */,
 				B368F15E1E5D5AF3006340F0 /* ViewController.h */,
 				B368F15F1E5D5AF3006340F0 /* ViewController.m */,
+				5ED6AAD120A663CC00128667 /* TestCVIEW.h */,
+				5ED6AAD220A663CC00128667 /* TestCVIEW.m */,
+				5ED6AAD420A6651E00128667 /* TestCVIEW.xib */,
 				5EB000B9209F068E003E8AF8 /* SNPopupViewController */,
 				B368F1611E5D5AF3006340F0 /* Main.storyboard */,
 				B368F1641E5D5AF3006340F0 /* Assets.xcassets */,
@@ -170,9 +218,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B368F1821E5D5AF3006340F0 /* Build configuration list for PBXNativeTarget "SNPopupViewController" */;
 			buildPhases = (
+				05CBAEBDF46824701DE86992 /* [CP] Check Pods Manifest.lock */,
 				B368F1511E5D5AF2006340F0 /* Sources */,
 				B368F1521E5D5AF2006340F0 /* Frameworks */,
 				B368F1531E5D5AF2006340F0 /* Resources */,
+				9F9F1ED5D5E862739BA4E228 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,6 +237,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B368F1851E5D5AF3006340F0 /* Build configuration list for PBXNativeTarget "SNPopupViewControllerTests" */;
 			buildPhases = (
+				CE8E1A6AA9EB681ECB8FCD33 /* [CP] Check Pods Manifest.lock */,
 				B368F16A1E5D5AF3006340F0 /* Sources */,
 				B368F16B1E5D5AF3006340F0 /* Frameworks */,
 				B368F16C1E5D5AF3006340F0 /* Resources */,
@@ -205,6 +256,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B368F1881E5D5AF3006340F0 /* Build configuration list for PBXNativeTarget "SNPopupViewControllerUITests" */;
 			buildPhases = (
+				FEBFE5B03D229C57E6636427 /* [CP] Check Pods Manifest.lock */,
 				B368F1751E5D5AF3006340F0 /* Sources */,
 				B368F1761E5D5AF3006340F0 /* Frameworks */,
 				B368F1771E5D5AF3006340F0 /* Resources */,
@@ -269,6 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ED6AAD520A6651E00128667 /* TestCVIEW.xib in Resources */,
 				B368F1681E5D5AF3006340F0 /* LaunchScreen.storyboard in Resources */,
 				B368F1651E5D5AF3006340F0 /* Assets.xcassets in Resources */,
 				B368F1631E5D5AF3006340F0 /* Main.storyboard in Resources */,
@@ -291,6 +344,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05CBAEBDF46824701DE86992 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SNPopupViewController-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F9F1ED5D5E862739BA4E228 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SNPopupViewController/Pods-SNPopupViewController-resources.sh",
+				"${PODS_ROOT}/SNTool/SNTool/SNTool/SNTool.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SNTool.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SNPopupViewController/Pods-SNPopupViewController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE8E1A6AA9EB681ECB8FCD33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SNPopupViewControllerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEBFE5B03D229C57E6636427 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SNPopupViewControllerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B368F1511E5D5AF2006340F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -298,6 +426,7 @@
 			files = (
 				5EB000BC209F068E003E8AF8 /* SNPopupView.m in Sources */,
 				5EB000C2209F0A64003E8AF8 /* UIViewController+SNPopupViewController.m in Sources */,
+				5ED6AAD320A663CC00128667 /* TestCVIEW.m in Sources */,
 				B368F1601E5D5AF3006340F0 /* ViewController.m in Sources */,
 				B368F15D1E5D5AF3006340F0 /* AppDelegate.m in Sources */,
 				B368F15A1E5D5AF3006340F0 /* main.m in Sources */,
@@ -464,6 +593,7 @@
 		};
 		B368F1831E5D5AF3006340F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B500300AAC4DC99B1BDAC85 /* Pods-SNPopupViewController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SNPopupViewController/Info.plist;
@@ -476,6 +606,7 @@
 		};
 		B368F1841E5D5AF3006340F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9664E31E728EDCA95D82FD45 /* Pods-SNPopupViewController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SNPopupViewController/Info.plist;
@@ -488,6 +619,7 @@
 		};
 		B368F1861E5D5AF3006340F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF2636B4F0DD4AA83353F281 /* Pods-SNPopupViewControllerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SNPopupViewControllerTests/Info.plist;
@@ -500,6 +632,7 @@
 		};
 		B368F1871E5D5AF3006340F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F492AE3094A98F9709C99330 /* Pods-SNPopupViewControllerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SNPopupViewControllerTests/Info.plist;
@@ -512,6 +645,7 @@
 		};
 		B368F1891E5D5AF3006340F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B378FEE2A1ED0CD86E3F9E0F /* Pods-SNPopupViewControllerUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SNPopupViewControllerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -523,6 +657,7 @@
 		};
 		B368F18A1E5D5AF3006340F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEE1119391F9FFD904747779 /* Pods-SNPopupViewControllerUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SNPopupViewControllerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
