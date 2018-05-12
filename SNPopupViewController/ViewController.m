@@ -28,6 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+//	pod trunk push SNPopupViewController.podspec --verbose --allow-warnings --use-libraries
 	
 	UIButton * button = [UIButton buttonWithType:UIButtonTypeSystem];
 	button.frame = CGRectMake(60, 200, 60, 60);
