@@ -9,8 +9,8 @@
 #import "ViewController.h"
 
 #import "TestCVIEW.h"
-#import <SNUIKit.h>
-#import <SNTool.h>
+//#import <SNUIKit.h>
+//#import <SNTool.h>
 
 @interface ViewController ()
 
@@ -32,7 +32,7 @@
 	
 	UIButton * button = [UIButton buttonWithType:UIButtonTypeSystem];
 	button.frame = CGRectMake(60, 200, 60, 60);
-	[button setTitle:SNString_localized(@"测试") forState:UIControlStateNormal];
+	[button setTitle:@"ddd" forState:UIControlStateNormal];
 	[button addTarget:self action:@selector(handleButton:) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:button];
 	
@@ -40,7 +40,7 @@
 
 - (void)handleButton:(UIButton *)sender {
 	
-	TestCVIEW * vc = [TestCVIEW sn_viewWithNib];
+	TestCVIEW * vc = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([TestCVIEW class]) owner:nil options:nil] lastObject];
 	
 	[vc showInSuperView:nil];
 	
