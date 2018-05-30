@@ -10,7 +10,6 @@
 		534336567ACCB860D8023802 /* libPods-SNPopupViewControllerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E97F7C17E45DB624CBECFD0 /* libPods-SNPopupViewControllerUITests.a */; };
 		5EB000BC209F068E003E8AF8 /* SNPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB000BB209F068E003E8AF8 /* SNPopupView.m */; };
 		5EB000BF209F077F003E8AF8 /* SNPopupTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB000BE209F077F003E8AF8 /* SNPopupTool.m */; };
-		5EB000C2209F0A64003E8AF8 /* UIViewController+SNPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB000C1209F0A64003E8AF8 /* UIViewController+SNPopupViewController.m */; };
 		5ED6AAD320A663CC00128667 /* TestCVIEW.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED6AAD220A663CC00128667 /* TestCVIEW.m */; };
 		5ED6AAD520A6651E00128667 /* TestCVIEW.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ED6AAD420A6651E00128667 /* TestCVIEW.xib */; };
 		8681A9BB84F38563396A9A32 /* libPods-SNPopupViewControllerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D94A6E039635FC15BE627CB /* libPods-SNPopupViewControllerTests.a */; };
@@ -49,8 +48,6 @@
 		5EB000BB209F068E003E8AF8 /* SNPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNPopupView.m; sourceTree = "<group>"; };
 		5EB000BD209F077F003E8AF8 /* SNPopupTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNPopupTool.h; sourceTree = "<group>"; };
 		5EB000BE209F077F003E8AF8 /* SNPopupTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNPopupTool.m; sourceTree = "<group>"; };
-		5EB000C0209F0A64003E8AF8 /* UIViewController+SNPopupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SNPopupViewController.h"; sourceTree = "<group>"; };
-		5EB000C1209F0A64003E8AF8 /* UIViewController+SNPopupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SNPopupViewController.m"; sourceTree = "<group>"; };
 		5ED6AAD120A663CC00128667 /* TestCVIEW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCVIEW.h; sourceTree = "<group>"; };
 		5ED6AAD220A663CC00128667 /* TestCVIEW.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCVIEW.m; sourceTree = "<group>"; };
 		5ED6AAD420A6651E00128667 /* TestCVIEW.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCVIEW.xib; sourceTree = "<group>"; };
@@ -137,8 +134,6 @@
 				5EB000BB209F068E003E8AF8 /* SNPopupView.m */,
 				5EB000BD209F077F003E8AF8 /* SNPopupTool.h */,
 				5EB000BE209F077F003E8AF8 /* SNPopupTool.m */,
-				5EB000C0209F0A64003E8AF8 /* UIViewController+SNPopupViewController.h */,
-				5EB000C1209F0A64003E8AF8 /* UIViewController+SNPopupViewController.m */,
 			);
 			path = SNPopupViewController;
 			sourceTree = "<group>";
@@ -425,7 +420,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EB000BC209F068E003E8AF8 /* SNPopupView.m in Sources */,
-				5EB000C2209F0A64003E8AF8 /* UIViewController+SNPopupViewController.m in Sources */,
 				5ED6AAD320A663CC00128667 /* TestCVIEW.m in Sources */,
 				B368F1601E5D5AF3006340F0 /* ViewController.m in Sources */,
 				B368F15D1E5D5AF3006340F0 /* AppDelegate.m in Sources */,

@@ -72,7 +72,11 @@ typedef void(^ReceiveDismissBlock)(void);
     [UIView animateWithDuration:0.15 animations:^{
         self.alpha = 1;
     } completion:^(BOOL finished) {
-        self.viewController.snPopup_isAbleEdgeGesture = NO;
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+        [[SNTool topViewController] performSelector:NSSelectorFromString(@"setSn_isAbleEdgeGesture:") withObject:[NSNumber numberWithBool:NO]];
+#pragma clang diagnostic pop
+        
         if (block) {
             block();
         }
@@ -92,7 +96,16 @@ typedef void(^ReceiveDismissBlock)(void);
 		
 	} completion:^(BOOL finished) {
 		[self removeFromSuperview];
-		self.viewController.snPopup_isAbleEdgeGesture = YES;
+		
+        id target = [SNTool topViewController];
+        BOOL boolValue = YES; // or NO
+        NSMethodSignature* signature = [[target class] instanceMethodSignatureForSelector:NSSelectorFromString(@"setSn_isAbleEdgeGesture:")];
+        NSInvocation* invocation = [NSInvocation invocationWithMethodSignature: signature];
+        [invocation setTarget:target];
+        [invocation setSelector:NSSelectorFromString(@"setSn_isAbleEdgeGesture:") ];
+        [invocation setArgument:&boolValue atIndex:2];
+        [invocation invoke];
+        
 		if (block) {
 			block();
 		}
