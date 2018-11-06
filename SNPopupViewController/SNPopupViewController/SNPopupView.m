@@ -18,6 +18,13 @@ typedef void(^ReceiveDismissBlock)(void);
 
 @property (nonatomic, strong) UIViewController * viewController;
 
+
+/**
+ 标记边缘返回手势
+ */
+@property (nonatomic, strong) UIViewController * gesture_viewController;
+@property (nonatomic, assign) BOOL isAbleEdgeGesture;
+
 @end
 
 @implementation SNPopupView
@@ -66,17 +73,24 @@ typedef void(^ReceiveDismissBlock)(void);
     //入场动画
 	[self addSubviewShowAnimation];
     
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+    self.gesture_viewController = [SNTool topViewController];
+    
+    if ([self.gesture_viewController respondsToSelector:NSSelectorFromString(@"sn_isAbleEdgeGesture")]) {
+        
+        self.isAbleEdgeGesture = [self.gesture_viewController performSelector:NSSelectorFromString(@"sn_isAbleEdgeGesture")];
+        
+        [self.gesture_viewController performSelector:NSSelectorFromString(@"setSn_isAbleEdgeGesture:") withObject:@(NO)];
+#pragma clang diagnostic pop
+    }
+    
     self.alpha = 0;
     [self.viewController.view endEditing:YES];
     [self.viewController.view addSubview:self];
     [UIView animateWithDuration:0.15 animations:^{
         self.alpha = 1;
     } completion:^(BOOL finished) {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-        [[SNTool topViewController] performSelector:NSSelectorFromString(@"setSn_isAbleEdgeGesture:") withObject:[NSNumber numberWithBool:NO]];
-#pragma clang diagnostic pop
-        
         if (block) {
             block();
         }
@@ -90,6 +104,20 @@ typedef void(^ReceiveDismissBlock)(void);
 	//退场动画
 	[self addSubviewDismissAnimation];
 	
+    if (self.isAbleEdgeGesture) {
+        //        NSMethodSignature* signature = [[target class] instanceMethodSignatureForSelector:NSSelectorFromString(@"setSn_isAbleEdgeGesture:")];
+        //        NSInvocation* invocation = [NSInvocation invocationWithMethodSignature: signature];
+        //        [invocation setTarget:target];
+        //        [invocation setSelector:NSSelectorFromString(@"setSn_isAbleEdgeGesture:") ];
+        //        [invocation setArgument:&boolValue atIndex:2];
+        //        [invocation invoke];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+        [self.gesture_viewController performSelector:NSSelectorFromString(@"setSn_isAbleEdgeGesture:") withObject:@(YES)];
+#pragma clang diagnostic pop
+        
+    }
+    
 	self.alpha = 1;
 	[UIView animateWithDuration:0.15 animations:^{
 		self.alpha = 0;
@@ -97,15 +125,6 @@ typedef void(^ReceiveDismissBlock)(void);
 	} completion:^(BOOL finished) {
 		[self removeFromSuperview];
 		
-        id target = [SNTool topViewController];
-        BOOL boolValue = YES; // or NO
-        NSMethodSignature* signature = [[target class] instanceMethodSignatureForSelector:NSSelectorFromString(@"setSn_isAbleEdgeGesture:")];
-        NSInvocation* invocation = [NSInvocation invocationWithMethodSignature: signature];
-        [invocation setTarget:target];
-        [invocation setSelector:NSSelectorFromString(@"setSn_isAbleEdgeGesture:") ];
-        [invocation setArgument:&boolValue atIndex:2];
-        [invocation invoke];
-        
 		if (block) {
 			block();
 		}
