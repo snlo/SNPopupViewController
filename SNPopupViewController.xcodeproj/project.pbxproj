@@ -364,7 +364,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SNPopupViewController/Pods-SNPopupViewController-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SNPopupViewController/Pods-SNPopupViewController-resources.sh",
 				"${PODS_ROOT}/SNTool/SNTool/SNTool/SNTool.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -373,7 +373,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SNPopupViewController/Pods-SNPopupViewController-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SNPopupViewController/Pods-SNPopupViewController-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CE8E1A6AA9EB681ECB8FCD33 /* [CP] Check Pods Manifest.lock */ = {
