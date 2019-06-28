@@ -1,14 +1,14 @@
 //
-//  TestCVIEW.m
+//  TestPopupView.m
 //  SNPopupViewController
 //
 //  Created by snlo on 2018/5/12.
 //  Copyright © 2018年 snlo. All rights reserved.
 //
 
-#import "TestCVIEW.h"
+#import "TestPopupView.h"
 
-@implementation TestCVIEW
+@implementation TestPopupView
 
 - (void)awakeFromNib {
 	[super awakeFromNib];
@@ -24,7 +24,8 @@
 	
 	self.showAnimation = sss;
 	
-	self.isBlankTouchInVisible = YES;
+    self.isBlankTouchInVisible = YES;
+    
 }
 
 - (void)addSubviewShowAnimation {

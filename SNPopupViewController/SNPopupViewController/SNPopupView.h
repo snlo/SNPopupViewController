@@ -16,6 +16,11 @@
 @property (nonatomic, assign) BOOL isBlankTouchInVisible;
 
 /**
+ 是否管理边缘手势，默认为‘NO’
+ */
+@property (nonatomic, assign) BOOL isOverrideAbleEdgeGesture;
+
+/**
  自定义出场动画
  */
 @property (nonatomic) CABasicAnimation * showAnimation;
@@ -51,7 +56,7 @@
  出场，指定控制器
 
  @param block 出场回调
- @param viewController 可以是viewcontroller、tabbarviewcontroller、navigationcontroller等
+ @param viewController 可以是viewController、tabBarViewController、navigationController等
  */
 - (void)showin:(void(^)(void))block withViewController:(UIViewController *)viewController;
 

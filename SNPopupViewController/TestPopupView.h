@@ -1,5 +1,5 @@
 //
-//  TestCVIEW.h
+//  TestPopupView.h
 //  SNPopupViewController
 //
 //  Created by snlo on 2018/5/12.
@@ -8,7 +8,7 @@
 
 #import "SNPopupView.h"
 
-@interface TestCVIEW : SNPopupView
+@interface TestPopupView : SNPopupView
 @property (weak, nonatomic) IBOutlet UIView *view1;
 @property (weak, nonatomic) IBOutlet UIView *view2;
 

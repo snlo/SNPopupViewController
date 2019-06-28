@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		534336567ACCB860D8023802 /* libPods-SNPopupViewControllerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E97F7C17E45DB624CBECFD0 /* libPods-SNPopupViewControllerUITests.a */; };
 		5EB000BC209F068E003E8AF8 /* SNPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB000BB209F068E003E8AF8 /* SNPopupView.m */; };
-		5EB000BF209F077F003E8AF8 /* SNPopupTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB000BE209F077F003E8AF8 /* SNPopupTool.m */; };
-		5ED6AAD320A663CC00128667 /* TestCVIEW.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED6AAD220A663CC00128667 /* TestCVIEW.m */; };
-		5ED6AAD520A6651E00128667 /* TestCVIEW.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ED6AAD420A6651E00128667 /* TestCVIEW.xib */; };
+		5ED6AAD320A663CC00128667 /* TestPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED6AAD220A663CC00128667 /* TestPopupView.m */; };
+		5ED6AAD520A6651E00128667 /* TestPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ED6AAD420A6651E00128667 /* TestPopupView.xib */; };
 		8681A9BB84F38563396A9A32 /* libPods-SNPopupViewControllerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D94A6E039635FC15BE627CB /* libPods-SNPopupViewControllerTests.a */; };
+		983CB9A122C6112A00C04530 /* UIViewController+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 983CB9A022C6112900C04530 /* UIViewController+Test.m */; };
 		AF5C409E520A1ACB875AE275 /* libPods-SNPopupViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6875B3BEBE7363CB345828EC /* libPods-SNPopupViewController.a */; };
 		B368F15A1E5D5AF3006340F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B368F1591E5D5AF3006340F0 /* main.m */; };
 		B368F15D1E5D5AF3006340F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B368F15C1E5D5AF3006340F0 /* AppDelegate.m */; };
@@ -46,14 +46,14 @@
 		4D94A6E039635FC15BE627CB /* libPods-SNPopupViewControllerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SNPopupViewControllerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB000BA209F068E003E8AF8 /* SNPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNPopupView.h; sourceTree = "<group>"; };
 		5EB000BB209F068E003E8AF8 /* SNPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNPopupView.m; sourceTree = "<group>"; };
-		5EB000BD209F077F003E8AF8 /* SNPopupTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNPopupTool.h; sourceTree = "<group>"; };
-		5EB000BE209F077F003E8AF8 /* SNPopupTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNPopupTool.m; sourceTree = "<group>"; };
-		5ED6AAD120A663CC00128667 /* TestCVIEW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCVIEW.h; sourceTree = "<group>"; };
-		5ED6AAD220A663CC00128667 /* TestCVIEW.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCVIEW.m; sourceTree = "<group>"; };
-		5ED6AAD420A6651E00128667 /* TestCVIEW.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCVIEW.xib; sourceTree = "<group>"; };
+		5ED6AAD120A663CC00128667 /* TestPopupView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPopupView.h; sourceTree = "<group>"; };
+		5ED6AAD220A663CC00128667 /* TestPopupView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPopupView.m; sourceTree = "<group>"; };
+		5ED6AAD420A6651E00128667 /* TestPopupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestPopupView.xib; sourceTree = "<group>"; };
 		6875B3BEBE7363CB345828EC /* libPods-SNPopupViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SNPopupViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B500300AAC4DC99B1BDAC85 /* Pods-SNPopupViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNPopupViewController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SNPopupViewController/Pods-SNPopupViewController.debug.xcconfig"; sourceTree = "<group>"; };
 		9664E31E728EDCA95D82FD45 /* Pods-SNPopupViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNPopupViewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-SNPopupViewController/Pods-SNPopupViewController.release.xcconfig"; sourceTree = "<group>"; };
+		983CB99F22C6112900C04530 /* UIViewController+Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Test.h"; sourceTree = "<group>"; };
+		983CB9A022C6112900C04530 /* UIViewController+Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Test.m"; sourceTree = "<group>"; };
 		B368F1551E5D5AF2006340F0 /* SNPopupViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNPopupViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B368F1591E5D5AF3006340F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B368F15B1E5D5AF3006340F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -132,8 +132,6 @@
 			children = (
 				5EB000BA209F068E003E8AF8 /* SNPopupView.h */,
 				5EB000BB209F068E003E8AF8 /* SNPopupView.m */,
-				5EB000BD209F077F003E8AF8 /* SNPopupTool.h */,
-				5EB000BE209F077F003E8AF8 /* SNPopupTool.m */,
 			);
 			path = SNPopupViewController;
 			sourceTree = "<group>";
@@ -167,9 +165,11 @@
 				B368F15C1E5D5AF3006340F0 /* AppDelegate.m */,
 				B368F15E1E5D5AF3006340F0 /* ViewController.h */,
 				B368F15F1E5D5AF3006340F0 /* ViewController.m */,
-				5ED6AAD120A663CC00128667 /* TestCVIEW.h */,
-				5ED6AAD220A663CC00128667 /* TestCVIEW.m */,
-				5ED6AAD420A6651E00128667 /* TestCVIEW.xib */,
+				5ED6AAD120A663CC00128667 /* TestPopupView.h */,
+				5ED6AAD220A663CC00128667 /* TestPopupView.m */,
+				5ED6AAD420A6651E00128667 /* TestPopupView.xib */,
+				983CB99F22C6112900C04530 /* UIViewController+Test.h */,
+				983CB9A022C6112900C04530 /* UIViewController+Test.m */,
 				5EB000B9209F068E003E8AF8 /* SNPopupViewController */,
 				B368F1611E5D5AF3006340F0 /* Main.storyboard */,
 				B368F1641E5D5AF3006340F0 /* Assets.xcassets */,
@@ -217,7 +217,6 @@
 				B368F1511E5D5AF2006340F0 /* Sources */,
 				B368F1521E5D5AF2006340F0 /* Frameworks */,
 				B368F1531E5D5AF2006340F0 /* Resources */,
-				9F9F1ED5D5E862739BA4E228 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -296,6 +295,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -316,7 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5ED6AAD520A6651E00128667 /* TestCVIEW.xib in Resources */,
+				5ED6AAD520A6651E00128667 /* TestPopupView.xib in Resources */,
 				B368F1681E5D5AF3006340F0 /* LaunchScreen.storyboard in Resources */,
 				B368F1651E5D5AF3006340F0 /* Assets.xcassets in Resources */,
 				B368F1631E5D5AF3006340F0 /* Main.storyboard in Resources */,
@@ -356,24 +356,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9F9F1ED5D5E862739BA4E228 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SNPopupViewController/Pods-SNPopupViewController-resources.sh",
-				"${PODS_ROOT}/SNTool/SNTool/SNTool/SNTool.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SNTool.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SNPopupViewController/Pods-SNPopupViewController-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CE8E1A6AA9EB681ECB8FCD33 /* [CP] Check Pods Manifest.lock */ = {
@@ -419,12 +401,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				983CB9A122C6112A00C04530 /* UIViewController+Test.m in Sources */,
 				5EB000BC209F068E003E8AF8 /* SNPopupView.m in Sources */,
-				5ED6AAD320A663CC00128667 /* TestCVIEW.m in Sources */,
+				5ED6AAD320A663CC00128667 /* TestPopupView.m in Sources */,
 				B368F1601E5D5AF3006340F0 /* ViewController.m in Sources */,
 				B368F15D1E5D5AF3006340F0 /* AppDelegate.m in Sources */,
 				B368F15A1E5D5AF3006340F0 /* main.m in Sources */,
-				5EB000BF209F077F003E8AF8 /* SNPopupTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

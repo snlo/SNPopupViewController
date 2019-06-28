@@ -8,20 +8,13 @@
 
 #import "ViewController.h"
 
-#import "TestCVIEW.h"
+#import "TestPopupView.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
-
-- (void)viewDidAppear:(BOOL)animated {
-	[super viewDidAppear:animated];
-	
-
-	
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,27 +23,33 @@
 	
 	UIButton * button = [UIButton buttonWithType:UIButtonTypeSystem];
 	button.frame = CGRectMake(60, 200, 60, 60);
-	[button setTitle:@"ddd" forState:UIControlStateNormal];
+	[button setTitle:@"show" forState:UIControlStateNormal];
 	[button addTarget:self action:@selector(handleButton:) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:button];
 	
 }
 
 - (void)handleButton:(UIButton *)sender {
-	
-	TestCVIEW * vc = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([TestCVIEW class]) owner:nil options:nil] lastObject];
-	
-	[vc showInSuperView:nil];
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+	TestPopupView * vc = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([TestPopupView class]) owner:nil options:nil] lastObject];
+	
+    [vc showInSuperView:nil];
+//    [vc showin:^{
+//
+//    } withViewController:self.navigationController];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(30 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [vc dismissFromSuperView:nil];
     });
 	
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)handleBack:(UIButton *)sender {
+    
+    if (self.presentingViewController) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    } else {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 
