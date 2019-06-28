@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SNPopupViewController"
-  s.version      = "0.1.3"
+  s.version      = "0.1.4"
   s.summary      = "Hello, I'm a pop-up window."
 
   # This description is used to generate tags and improve search results.
