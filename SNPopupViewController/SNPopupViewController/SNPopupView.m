@@ -66,19 +66,6 @@ typedef void(^ReceiveDismissBlock)(void);
     //入场动画
 	[self addSubviewShowAnimation];
     
-    if (!self.isOverrideAbleEdgeGesture) {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-        self.gesture_viewController = UIApplication.sharedApplication.keyWindow.rootViewController.childViewControllers.lastObject;
-        
-        if ([self.gesture_viewController respondsToSelector:NSSelectorFromString(@"SNPopupView_isAbleEdgeGesture")]) {
-            
-            self.isAbleEdgeGesture = [self.gesture_viewController performSelector:NSSelectorFromString(@"SNPopupView_isAbleEdgeGesture")];
-            
-            [self.gesture_viewController performSelector:NSSelectorFromString(@"setSNPopupView_isAbleEdgeGesture:") withObject:@(NO)];
-#pragma clang diagnostic pop
-        }
-    }
     self.alpha = 0;
     
     [UIApplication.sharedApplication.keyWindow endEditing:YES];
@@ -100,14 +87,6 @@ typedef void(^ReceiveDismissBlock)(void);
 	//退场动画
 	[self addSubviewDismissAnimation];
 	
-    if (!self.isOverrideAbleEdgeGesture) {
-        if (self.isAbleEdgeGesture) {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-            [self.gesture_viewController performSelector:NSSelectorFromString(@"setSNPopupView_isAbleEdgeGesture:") withObject:@(YES)];
-#pragma clang diagnostic pop
-        }
-    }
 	self.alpha = 1;
 	[UIView animateWithDuration:0.15 animations:^{
 		self.alpha = 0;
@@ -159,76 +138,6 @@ typedef void(^ReceiveDismissBlock)(void);
 		_dismissAnimation.removedOnCompletion = NO;
 		_dismissAnimation.fillMode = kCAFillModeForwards;
 	} return _dismissAnimation;
-}
-
-@end
-
-@interface UIViewController (SNPopupView) <UIGestureRecognizerDelegate>
-@end
-@implementation UIViewController (SNPopupView)
-
-void SNPopupView_replaceMethodFromNew(Class aClass, SEL aMethod, SEL newMethod) {
-    Method aMethods = class_getInstanceMethod(aClass, aMethod);
-    Method newMethods = class_getInstanceMethod(aClass, newMethod);
-
-    if(class_addMethod(aClass, aMethod, method_getImplementation(newMethods), method_getTypeEncoding(newMethods))) {
-        class_replaceMethod(aClass, newMethod, method_getImplementation(aMethods), method_getTypeEncoding(aMethods));
-    } else {
-        method_exchangeImplementations(aMethods, newMethods);
-    }
-}
-
-+ (void)load {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        SNPopupView_replaceMethodFromNew(self, @selector(viewWillAppear:), @selector(SNPopupView_viewWillAppear:));
-    });
-}
-
-- (void)SNPopupView_viewWillAppear:(BOOL)animated {
-    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
-        self.navigationController.interactivePopGestureRecognizer.delegate = self;
-    }
-    if ([self SNPopupView_navigationController].viewControllers.count < 2) {
-        self.SNPopupView_isAbleEdgeGesture = @(NO);
-    }
-    [self SNPopupView_viewWillAppear:animated];
-}
-
-//解决多次触发navigation边缘返回手势后的冲突
-#pragma mark -- UIGestureRecognizerDelegate
-- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
-    return [self.SNPopupView_isAbleEdgeGesture boolValue];
-}
-
-- (void)setSNPopupView_isAbleEdgeGesture:(NSNumber *)SNPopupView_isAbleEdgeGesture {
-    objc_setAssociatedObject(self, @selector(SNPopupView_isAbleEdgeGesture), SNPopupView_isAbleEdgeGesture, OBJC_ASSOCIATION_RETAIN);
-}
-- (NSNumber *)SNPopupView_isAbleEdgeGesture {
-    NSNumber * number = objc_getAssociatedObject(self, _cmd);
-    if (!number) {
-        number = [NSNumber numberWithBool:YES];
-        objc_setAssociatedObject(self, @selector(SNPopupView_isAbleEdgeGesture), number, OBJC_ASSOCIATION_RETAIN);
-    }
-    return number;
-}
-
-- (UINavigationController *)SNPopupView_navigationController {
-    if (self.navigationController) {
-        return self.navigationController;
-    } else if (self.tabBarController.navigationController) {
-        return self.tabBarController.navigationController;
-    } else if ([self isKindOfClass:[UINavigationController class]]) {
-        return (UINavigationController *)self;
-    } else if ([self isKindOfClass:[UITabBarController class]]) {
-        if (((UITabBarController *)self).navigationController) {
-            return ((UITabBarController *)self).navigationController;
-        } else {
-            return [UINavigationController new];
-        }
-    } else {
-        return [UINavigationController new];
-    }
 }
 
 @end

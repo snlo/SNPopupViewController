@@ -16,11 +16,6 @@
 @property (nonatomic, assign) BOOL isBlankTouchInVisible;
 
 /**
- 是否管理边缘手势，默认为‘NO’
- */
-@property (nonatomic, assign) BOOL isOverrideAbleEdgeGesture;
-
-/**
  自定义出场动画
  */
 @property (nonatomic) CABasicAnimation * showAnimation;
