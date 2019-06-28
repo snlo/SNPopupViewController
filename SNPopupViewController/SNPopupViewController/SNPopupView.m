@@ -15,34 +15,24 @@ typedef void(^ReceiveDismissBlock)(void);
 
 @property (nonatomic, copy) ReceiveDismissBlock receiveDismissBlock;
 @property (nonatomic, strong) UIViewController * viewController;
-@property (nonatomic, strong) UIViewController * gesture_viewController; //标记边缘返回手势
 @property (nonatomic, assign) BOOL isAbleEdgeGesture;
 
 @end
 
 @implementation SNPopupView
 
-- (void)dealloc {
-    NSLog(@"%s",__func__);
-}
-
 #pragma mark -- <UIGestureRecognizerDelegate>
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
-    //防止自视图触发点击回退事件
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
 	__block BOOL gesture = true;
 	[self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-		if ([touch.view isDescendantOfView:obj]) {
-			gesture = false;
-		}
+		if ([touch.view isDescendantOfView:obj]) gesture = false; //防止附加视图触发点击回退事件
 	}];
     return gesture;
 }
 
 #pragma mark -- event response
 - (void)touchesBlank:(UITapGestureRecognizer *)sender {
-    if (!self.isBlankTouchInVisible) {
-        [self dismissFromSuperView:nil];
-    }
+    if (!self.isBlankTouchInVisible) [self dismissFromSuperView:nil];
 }
 
 #pragma mark -- public methods
@@ -54,66 +44,55 @@ typedef void(^ReceiveDismissBlock)(void);
 	self.viewController = viewController;
 	[self showInSuperView:block];
 }
+
 - (void)showInSuperView:(void(^)(void))block {
     self.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
     
-    //加载单击回退手势
-    UITapGestureRecognizer * touchBlankGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(touchesBlank:)];
+    UITapGestureRecognizer * touchBlankGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(touchesBlank:)]; //单击回退
     touchBlankGesture.numberOfTapsRequired = 1;
     touchBlankGesture.delegate = self;
     [self addGestureRecognizer:touchBlankGesture];
     
-    //入场动画
 	[self addSubviewShowAnimation];
-    
-    self.alpha = 0;
     
     [UIApplication.sharedApplication.keyWindow endEditing:YES];
     [UIApplication.sharedApplication.keyWindow addSubview:self];
     
+    self.alpha = 0;
     [UIView animateWithDuration:0.15 animations:^{
         self.alpha = 1;
     } completion:^(BOOL finished) {
-        if (block) {
-            block();
-        }
+        if (block) block();
     }];
 }
 
 - (void)addSubviewDismissAnimation {
 	[self.subviews.firstObject.layer addAnimation:self.dismissAnimation forKey:nil];
 }
+
 - (void)dismissFromSuperView:(void(^)(void))block {
-	//退场动画
 	[self addSubviewDismissAnimation];
 	
 	self.alpha = 1;
 	[UIView animateWithDuration:0.15 animations:^{
 		self.alpha = 0;
-		
 	} completion:^(BOOL finished) {
 		[self removeFromSuperview];
-		if (block) {
-			block();
-		}
-		if (self.receiveDismissBlock) {
-			self.receiveDismissBlock();
-		}
+		if (block) block();
+		if (self.receiveDismissBlock) self.receiveDismissBlock();
 	}];
 }
 
 - (void)receiveDismissBlock:(void(^)(void))block {
-    if (block) {
-        self.receiveDismissBlock = block;
-    }
+    if (block) self.receiveDismissBlock = block;
 }
-#pragma mark -- private methods
 
 #pragma mark -- getter / setter
 @synthesize showAnimation = _showAnimation;
 - (void)setShowAnimation:(CABasicAnimation *)showAnimation {
 	_showAnimation = showAnimation;
 }
+
 @synthesize dismissAnimation = _dismissAnimation;
 - (void)setDismissAnimation:(CABasicAnimation *)dismissAnimation {
 	_dismissAnimation = dismissAnimation;
@@ -130,6 +109,7 @@ typedef void(^ReceiveDismissBlock)(void);
 		_showAnimation.fillMode = kCAFillModeForwards;
 	} return _showAnimation;
 }
+
 - (CABasicAnimation *)dismissAnimation {
 	if (_dismissAnimation) {
 		_dismissAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];

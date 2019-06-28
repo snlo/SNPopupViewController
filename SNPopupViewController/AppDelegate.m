@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "UIViewController+Test.h"
+
 @interface AppDelegate ()
 
 @end

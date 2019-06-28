@@ -20,12 +20,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 //	pod trunk push SNPopupViewController.podspec --verbose --allow-warnings --use-libraries
-	
-	UIButton * button = [UIButton buttonWithType:UIButtonTypeSystem];
-	button.frame = CGRectMake(60, 200, 60, 60);
-	[button setTitle:@"show" forState:UIControlStateNormal];
-	[button addTarget:self action:@selector(handleButton:) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton * button = ({
+        button = [UIButton buttonWithType:UIButtonTypeSystem];
+        button.frame = CGRectMake(0, 0, 60, 60);
+        button.center = self.view.center;
+        [button setTitle:@"show" forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(handleButton:) forControlEvents:UIControlEventTouchUpInside];
+        button;
+    });
 	[self.view addSubview:button];
+    
 	
 }
 
@@ -41,8 +46,8 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(30 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [vc dismissFromSuperView:nil];
     });
-	
 }
+
 - (IBAction)handleBack:(UIButton *)sender {
     
     if (self.presentingViewController) {

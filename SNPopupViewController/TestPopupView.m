@@ -24,7 +24,7 @@
 	
 	self.showAnimation = sss;
 	
-    self.isBlankTouchInVisible = YES;
+//    self.isBlankTouchInVisible = YES;
     
 }
 
