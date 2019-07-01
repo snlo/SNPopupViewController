@@ -38,13 +38,13 @@
     
     TestPopupView * vc = [TestPopupView viewWithNib];
 	
-    [vc showInSuperView:nil];
+    [vc show:nil];
 //    [vc showin:^{
 //
 //    } withViewController:self.navigationController];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(30 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [vc dismissFromSuperView:nil];
+        [vc dismiss:nil];
     });
 }
 

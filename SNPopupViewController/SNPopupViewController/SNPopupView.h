@@ -44,13 +44,13 @@
  退场
  @param block 退场回调
  */
-- (void)dismissFromSuperView:(void(^)(void))block;
+- (void)dismiss:(void(^)(void))block;
 
 /**
  出场
  @param block 出场回调
  */
-- (void)showInSuperView:(void(^)(void))block;
+- (void)show:(void(^)(void))block;
 
 /**
  出场，指定控制器
@@ -58,11 +58,11 @@
  @param block 出场回调
  @param viewController 可以是viewController、tabBarViewController、navigationController等
  */
-- (void)showin:(void(^)(void))block withViewController:(UIViewController *)viewController;
+- (void)show:(void(^)(void))block in:(UIViewController *)viewController;
 
 /**
  退场回调拦截
  */
-- (void)receiveDismissBlock:(void(^)(void))block;
+- (void)receiveDismissed:(void(^)(void))block;
 
 @end

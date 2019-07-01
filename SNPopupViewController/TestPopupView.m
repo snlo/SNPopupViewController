@@ -42,7 +42,7 @@
 }
 - (IBAction)handleButton:(id)sender {
 	
-	[self dismissFromSuperView:nil];
+	[self dismiss:nil];
 }
 
 

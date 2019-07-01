@@ -41,7 +41,7 @@ typedef void(^ReceiveDismissBlock)(void);
 
 #pragma mark -- event response
 - (void)touchesBlank:(UITapGestureRecognizer *)sender {
-    if (!self.isBlankTouchInVisible) [self dismissFromSuperView:nil];
+    if (!self.isBlankTouchInVisible) [self dismiss:nil];
 }
 
 #pragma mark -- public methods
@@ -49,12 +49,16 @@ typedef void(^ReceiveDismissBlock)(void);
 	[self.subviews.firstObject.layer addAnimation:self.showAnimation forKey:nil];
 }
 
-- (void)showin:(void(^)(void))block withViewController:(UIViewController *)viewController {
-	self.viewController = viewController;
-	[self showInSuperView:block];
+- (void)addSubviewDismissAnimation {
+    [self.subviews.firstObject.layer addAnimation:self.dismissAnimation forKey:nil];
 }
 
-- (void)showInSuperView:(void(^)(void))block {
+- (void)show:(void(^)(void))block in:(UIViewController *)viewController {
+	self.viewController = viewController;
+	[self show:block];
+}
+
+- (void)show:(void(^)(void))block {
     self.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
     
     UITapGestureRecognizer * touchBlankGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(touchesBlank:)]; //单击回退
@@ -75,11 +79,7 @@ typedef void(^ReceiveDismissBlock)(void);
     }];
 }
 
-- (void)addSubviewDismissAnimation {
-	[self.subviews.firstObject.layer addAnimation:self.dismissAnimation forKey:nil];
-}
-
-- (void)dismissFromSuperView:(void(^)(void))block {
+- (void)dismiss:(void(^)(void))block {
 	[self addSubviewDismissAnimation];
 	
 	self.alpha = 1;
@@ -92,7 +92,7 @@ typedef void(^ReceiveDismissBlock)(void);
 	}];
 }
 
-- (void)receiveDismissBlock:(void(^)(void))block {
+- (void)receiveDismissed:(void(^)(void))block {
     if (block) self.receiveDismissBlock = block;
 }
 
