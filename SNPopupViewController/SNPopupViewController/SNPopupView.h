@@ -26,6 +26,11 @@
 @property (nonatomic) CABasicAnimation * dismissAnimation;
 
 /**
+ 加载nib文件的构造函数
+ */
++ (instancetype)viewWithNib;
+
+/**
  实现为子视图添加出场动画，对多个子视图定制
  */
 - (void)addSubviewShowAnimation;

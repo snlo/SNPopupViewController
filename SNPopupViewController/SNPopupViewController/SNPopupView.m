@@ -21,6 +21,15 @@ typedef void(^ReceiveDismissBlock)(void);
 
 @implementation SNPopupView
 
++ (instancetype)viewWithNib {
+    SNPopupView * view = [[SNPopupView alloc] init];
+    if ([NSStringFromClass([self class]) isEqualToString:@"SNPopupView"]) {
+        return view;
+    }
+    view = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:nil options:nil] lastObject];
+    return view;
+}
+
 #pragma mark -- <UIGestureRecognizerDelegate>
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
 	__block BOOL gesture = true;

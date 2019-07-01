@@ -36,7 +36,7 @@
 
 - (void)handleButton:(UIButton *)sender {
     
-	TestPopupView * vc = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([TestPopupView class]) owner:nil options:nil] lastObject];
+    TestPopupView * vc = [TestPopupView viewWithNib];
 	
     [vc showInSuperView:nil];
 //    [vc showin:^{
